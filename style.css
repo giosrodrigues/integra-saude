@@ -1,0 +1,113 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-size-adjust: 100px;
+    margin-top:45px;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 15px;
+    background-color:#94d2f8 ;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+h1{
+    color: darkblue;
+    font-size: 56px;
+}
+li{
+     margin-left: -48px;
+     list-style: none;
+     display: inline-block;
+     margin:20px
+   
+}
+a:hover{
+    color: darkblue;
+    transition:0.3s all;
+}
+
+a{
+    font-size: 18px;
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+   
+    cursor:  pointer;
+}
+#inscreva-se-btn{
+    
+    padding: 10px;
+    border: 3px solid darkblue;
+    border-radius: 15px;
+}
+#inscreva-se-btn:hover{
+    background-color:darkblue;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+
+form{
+    display:flex;
+    flex-direction: column;
+    width:35%;
+    margin-left: 390px;
+}
+input{
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 15px;
+}
+form [type="submit"]{
+    background-color: darkblue;
+    color:whitesmoke;
+    height: 50px;
+    width:50%;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    background-color: rgb(2, 2, 93);
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 28px;
+}
+p{
+    color: #666;
+}
+
+section{
+   margin-top: 30px;
+   margin-left:55px;
+}
+button {
+    background-color: #007bff;
+    color:whitesmoke;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor:  pointer;
+    text-align: center;
+}
+
+button:hover{
+    background-color: #0056b3;
+    transition:0.3s all;
+}
+
+.center{
+    text-align: center;
+}
