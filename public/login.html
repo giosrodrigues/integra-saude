@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Paciente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Integra</h1>
+            <h1>Saúde</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Faça o seu login</h2>
+        <form id="loginForm">
+            <input type="email" placeholder="E-mail" name="email" required>
+            <input type="password" placeholder="Senha" name="senha" required>
+            <div>
+                <label><input type="radio" name="userType" value="patient" checked> Paciente</label>
+                <label><input type="radio" name="userType" value="professional"> Profissional</label>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

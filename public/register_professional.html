@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Profissional</title>
+    <link rel="stylesheet" href="style_profissional.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Integra</h1>
+            <h1>Saúde</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Vamos fazer o seu cadastro!</h2>
+        <p>Para isso, informe:</p>
+        <form id="registerProfessionalForm">
+            <div class="form_row">
+                <input type="text" name="nome" placeholder="Nome completo" id="nome">
+                <input type="date" name="data_nascimento" placeholder="Data de nascimento">
+            </div>
+            <div class="form_row">
+                <input type="text" name="profissao" placeholder="Profissão">
+                <input type="text" name="carteira_registro" placeholder="Carteira do registro">
+            </div>
+            <div class="form_row">
+                <input type="number" name="cpf" placeholder="CPF">
+                <input type="text" name="estado" placeholder="Estado">
+                <input type="text" name="cidade" placeholder="Cidade">
+            </div>
+            <div class="form_row">
+                <input type="number" name="cep" placeholder="CEP">
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <input type="password" name="senha" placeholder="Senha de 8 dígitos">
+            <input type="submit" value="Cadastrar">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 45px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #94d2f8;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:relative;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 56px;
+}
+h2{
+    color:whitesmoke
+}
+
+.menu-bar {
+    font-size: 36px;
+    cursor: pointer;
+    right: 88px;
+    position:absolute;
+}
+.menu-bar:hover{
+    border-radius: 3px;
+    border:#343844 solid;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #343844;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar input[type="number"] {
+    padding: 10px;
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: hsl(223, 77%, 85%);
+}
+
+
+main {
+    padding: 20px;
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+main.expanded {
+    margin-right: 250px; /* Ajuste conforme a largura da sidebar */
+}
+
+
+li:hover{
+    color: whitesmoke;
+    background-color: rgb(1, 1, 92);
+    transition:0.3s all;
+    padding: 45px;
+    border: 3px solid rgb(1, 1, 92);
+    border-radius: 15px;
+    transition:0.3s;
+}
+
+li{
+    font-size: 18px;
+    display: block;
+    background-color: darkblue;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    cursor:  pointer;
+    margin: 30px;
+    padding: 15px;
+    border: 3px solid darkblue;
+    border-radius: 15px;
+}
+
+.hover-container {
+    position: relative;
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+
+.hover-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px; /* Ajuste conforme necessário */
+    background-color: rgb(1, 1, 92);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 100%; /* Ajuste conforme necessário */
+    left: 10%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+}
+
+.hover-container:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+}

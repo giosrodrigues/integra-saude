@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Paciente</title>
+    <link rel="stylesheet" href="style_paciente.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Integra</h1>
+            <h1>Saúde</h1>
+        </div>
+    </header>
+    <main>
+        <h2>Vamos fazer o seu cadastro!</h2>
+        <form id="registerForm">
+            <div class="form_row">
+                <input type="text" placeholder="Nome completo" name="nome" required>
+                <input type="date" placeholder="Data de nascimento" name="data_nascimento" required>
+            </div>
+            <div class="form_row">
+                <input type="number" placeholder="CPF" name="cpf" required>
+                <input type="text" placeholder="Estado" name="estado" required>
+                <input type="text" placeholder="Cidade" name="cidade" required>
+            </div>
+            <div class="form_row">
+                <input type="number" placeholder="CEP" name="cep" required>
+                <input type="tel" placeholder="Telefone" name="telefone" required>
+                <input type="email" placeholder="E-mail" name="email" required>
+            </div>
+            <input type="password" placeholder="Senha de 8 dígitos" name="senha" required>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
